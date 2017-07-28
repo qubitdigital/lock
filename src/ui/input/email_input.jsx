@@ -27,13 +27,7 @@ export default class EmailInput extends React.Component {
     const { focused } = this.state;
 
     return (
-      <InputWrap
-        focused={focused}
-        invalidHint={invalidHint}
-        isValid={isValid}
-        name="email"
-        icon={svg}
-      >
+      <InputWrap focused={focused} invalidHint={invalidHint} isValid={isValid} name="email">
         <input
           ref="input"
           type="email"

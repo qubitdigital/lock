@@ -56,7 +56,6 @@ export default class PasswordInput extends React.Component {
         invalidHint={policy ? undefined : invalidHint}
         isValid={isValid}
         name="password"
-        icon={icon}
       >
         <input
           ref="input"
