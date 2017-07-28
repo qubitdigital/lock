@@ -35,18 +35,21 @@ tabsHeight = 40px
 
   .auth0-global-message
     color white
-    text-align center
-    padding 10px
+    text-align left
+    padding 8px 14px
     line-height 1.8
     font-size 11px
     font-weight 600
-    text-transform uppercase
+    border-radius 5px
+    margin-bottom 24px
+    // text-transform uppercase
 
     &.auth0-global-message-error
-      background #FF3E00
+      background #e35d51
 
     &.auth0-global-message-success
-      background #7ED321
+      background #e8f7ed
+      color #06a94a
 
     &.global-message-enter
       height 0
@@ -69,7 +72,7 @@ tabsHeight = 40px
       animation-delay .2s
 
 .auth0-lock.auth0-lock
-  font-family "Avenir Next", Avenir, -apple-system, BlinkMacSystemFont, Roboto, Helvetica, sans-serif
+  font-family "Open Sans", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, sans-serif
   text-rendering optimizeLegibility
   pointer-events none
   position fixed
@@ -129,6 +132,7 @@ tabsHeight = 40px
   .auth0-lock-cred-pane
     height 100%
     border-radius 6px
+    padding: 24px
     background white
     position relative
 
@@ -147,11 +151,11 @@ tabsHeight = 40px
   .auth0-lock-header
     text-align center
     padding 11px
-    height headerHeight
+    // height headerHeight
     color #333
     position relative
     background #fff
-    border-radius 5px 5px 0 0
+    border-radius 5px
     overflow hidden
     -webkit-box-sizing border-box
     box-sizing border-box
@@ -204,7 +208,7 @@ tabsHeight = 40px
 
   .auth0-lock-header-bg
     position absolute
-    height headerHeight
+    // height headerHeight
     width 100%
     overflow hidden
     top 0
@@ -254,15 +258,15 @@ tabsHeight = 40px
 
   .auth0-lock-header-logo
     width auto
-    height 58px
+    height 24px
     display inline-block
-    margin 0 0 11px
+    margin 0 0 12px
     vertical-align middle
     -webkit-transition margin-top .4s
     transition margin-top .4s
 
     &.centered
-      margin-top 20px
+      // margin-top 20px
 
   .auth0-lock-firstname
     font-size 18px
@@ -273,18 +277,19 @@ tabsHeight = 40px
     padding 0 10px
 
   .auth0-lock-name
-    font-size 22px
+    font-size 18px
     text-overflow ellipsis
     white-space nowrap
     overflow hidden
-    padding 0 10px
+    padding 0 3px
+    text-align left
 
 
   // Lock body content
 
 
   .auth0-lock-content
-    padding 20px
+    padding 0 0 24px 0
     -webkit-box-sizing border-box
     -moz-box-sizing border-box
     box-sizing border-box
@@ -302,9 +307,10 @@ tabsHeight = 40px
       color black
 
     p
-      font-size 13px
-      line-height 1.8
-      text-align center
+      font-size 11px
+      line-height 1.09
+      text-align left
+      padding 0 14px
       margin-top 0
       margin-bottom 15px
       color rgba(0,0,0,.54)
@@ -314,7 +320,7 @@ tabsHeight = 40px
       margin-bottom 0
 
       .auth0-lock-alternative-link
-        font-size 13px
+        // font-size 13px
         color rgba(0,0,0,.87)
         cursor pointer
         margin-bottom 0
@@ -323,7 +329,7 @@ tabsHeight = 40px
     position relative
     margin-bottom 15px
     +breakpoint("mobile")
-      margin-bottom 10px
+      margin-bottom 24px
 
     &:last-child
       margin-bottom 0
@@ -374,10 +380,10 @@ tabsHeight = 40px
       border 0
       padding 0 14px
       right 0
-      height 40px
+      height 32px
       font-size 13px
       width 100%
-      border-radius 0 2px 2px 0
+      border-radius 4px
       -webkit-box-sizing border-box
       -moz-box-sizing border-box
       box-sizing border-box
@@ -396,7 +402,7 @@ tabsHeight = 40px
           color rgba(0,0,0,.54);
 
   .auth0-lock-error .auth0-lock-input-wrap
-    border-color red
+    border-color #e35d51
     transition .3s ease-in-out
   .auth0-lock-input-checkbox
     text-align left
@@ -539,21 +545,21 @@ tabsHeight = 40px
 
   .auth0-lock-submit
     border 0
-    padding 14px
+    // padding 14px
     display block
     -webkit-box-sizing border-box
     box-sizing border-box
     width 100%
-    height submitHeight
+    // height submitHeight
     overflow hidden
-    border-radius 0 0 5px 5px
+    border-radius 5px
     -webkit-transition .2s ease-in-out
     transition .2s ease-in-out
 
     color white
     letter-spacing 1px
     font-size 14px
-    text-transform uppercase
+    // text-transform uppercase
 
     span
       display inline-block
@@ -566,8 +572,8 @@ tabsHeight = 40px
           margin -4px 0 0 5px
 
     .auth0-label-submit
-      height 42px
-      line-height 42px
+      height 32px
+      line-height 32px
 
     +breakpoint("mobile")
       &:hover:not([disabled])
@@ -604,8 +610,8 @@ tabsHeight = 40px
       position absolute
       top 4px
       left 44%
-      width 30px
-      height 30px
+      width 20px
+      height 20px
       border-width 2px
       border-style solid
       border-color rgba(0,0,0,.4) rgba(0,0,0,.4) rgba(0,0,0,.2) rgba(0,0,0,.2)
@@ -1101,7 +1107,7 @@ tabsHeight = 40px
 
 .auth0-lock.auth0-lock
   .auth0-lock-tabs-container
-    margin -20px -20px 20px
+    margin -24px -20px 20px
     height tabsHeight
 
   .auth0-lock-tabs
